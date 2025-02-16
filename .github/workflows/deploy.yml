@@ -20,12 +20,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "yarn"
 
-      - name: yarn install and build
+      - name: npm install, build
         run: |
-          yarn install --frozen-lockfile
-          yarn build
+          npm install
+          npm run build
 
       - name: Copy static files
         run: |
