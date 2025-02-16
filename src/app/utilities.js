@@ -2,8 +2,7 @@ const { ethers } = require("ethers");
 
 export async function createSignature(owner, tokenType, tokenContractAddress, value, deadline) {
 
-
-  const server_url = "https://gasless-efbwhzbgc2csg5c4.centralindia-01.azurewebsites.net";
+  const server_url = "https://gasless-token-transfer-aghnanc3ggfvhzck.centralindia-01.azurewebsites.net";
 
   const gaslessTokenTransferAddress = await (await fetch(server_url+'/gasless-addr')).text();
   const gaslessAbi = await (await fetch(server_url+'/gasless-abi')).text();

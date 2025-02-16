@@ -27,7 +27,6 @@ export default function Home() {
     }
   }, []);
 
-
   const server_url = "https://gasless-token-transfer-aghnanc3ggfvhzck.centralindia-01.azurewebsites.net";
 
   const connectWallet = async () => {
